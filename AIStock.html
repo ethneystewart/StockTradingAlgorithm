@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Data - Noetic</title>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+    <link rel='icon' href='favicon.ico' type='image/x-icon' />
+    <link href="StkBots.css" rel="stylesheet" />
+</head>
+<body  onload="Init();">
+&nbsp;
+<span style="font-size: small">Quick Pick:</span>
+<select id="ddStockGraph" onchange="ddStockGraph_onchange();">
+  <option value="0">0 (Base)</option>
+  <option value="-1">-1 (Extra Model)</option>
+  <option value="1">1 (Extended)</option>
+  <option value="2">2 (Large)</option>
+  <option value="3">3 (X-Large)</option>
+  <option value="44">44 (Currency)</option>
+  <option value="9">9 (Live Trading)</option>
+
+</select>
+&nbsp;&nbsp;
+
+<span style="font-size: small">Symbol:</span>
+&nbsp;
+<input id="txtSymbol" style="width:100px" type="text" value="DJI.INDX" />
+<span class='smallstock' style="margin-left: 4px" onclick='UpdateGraph();'>&nbsp;Get History&nbsp;</span>
+<span class='smallstock' style="margin-left: 4px" onclick='GetGridData();'>&nbsp;Get Data Table&nbsp;</span>&nbsp;&nbsp;
+<span class='smallstock' style="margin-left: 4px" onclick='UpdateGraphIntra();'>&nbsp;Get INTRA&nbsp;</span>&nbsp;&nbsp;
+<span id="quote" style="font-size: small"></span>
+<br/>
+<br/>
+
+<div style="width: 100%; height:70%; overflow: hidden;">
+    <div style="width: 140px;;height:100%; float: left; overflow: scroll" id="stkList">Stk List</div>
+    <div style="margin-left: 150px;height:100%" id="chart"> Right </div>
+</div>
+&nbsp;
+<div id="grid"></div>
+
+<script src="highcharts/highstock.js"></script>
+    <script src="highcharts/exporting.js"></script>
+    <script src="highcharts/themes/dark-green.js"></script>
+ <script type="text/javascript" src="AIStock.js"></script>
+</body>
+</html>

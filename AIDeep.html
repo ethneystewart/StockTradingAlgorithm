@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Deep Scanner Trader</title>
+     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+    <link rel='icon' href='favicon.ico' type='image/x-icon' />
+
+    <link href="StkBots.css" rel="stylesheet" />
+    <style>
+
+    </style>
+</head>
+<body  onload="Init();">
+
+<span id="msg"></span>
+<table style="margin:15px">
+    <tr  style="vertical-align:top">
+        <td style='font-size:small'>Group Dir:
+        <select id="ddTable" onchange="SetCookie();GetScannerData();"></select>
+       &nbsp;<span id="txtCount"></span>
+        &nbsp;&nbsp;<span class='smallstock' style="margin-left: 4px; font-size: 15px" onclick='GetScannerData();'>&nbsp;ReLoad&nbsp;</span>
+        <span class='smallstock' style="margin-left: 4px;; font-size: 15px  "  onclick='RunCancel();'>&nbsp;Cancel&nbsp;All Runs</span>&nbsp;&nbsp;
+        </td>
+        <td><a style='text-decoration: underline; color:blue; font-size:small'  href='AIDeep.html' target='_blank'>DEEP ANLYSIS</a></td>
+        <td><a style='text-decoration: underline; color:blue; font-size:small'  href='AICorr.html' target='_blank'>CORRELATION STATION</a></td>
+        <td><a style='text-decoration: underline; color:blue; font-size:small'  href='Picks.html' target='_blank'>PICKS </a></td>
+         <td></td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top; border: 2px solid black" rowspan="3">
+            <table>
+                <tr><td>Concensus Filter:</td></tr>
+                <tr><td>Collapse: <input type="checkbox" onclick="SetCookie();GetScannerData();" id="chkJustActive"></td></tr>
+                <tr><td>Min Trade Score: <input type="text" style="width:80px" id="txtTradeScore" value="1.0"></td></tr>
+                <tr><td>Max Models Used:  <input type="text" style="width:80px" id="txtMaxModels" value="20"></td></tr>
+                <tr><td>Min Models:  <input type="text" style="width:80px" id="txtMinModels" value="10"></td></tr>
+                <tr><td><span class='smallstock' style="margin-left: 4px;; font-size: 15px  "  onclick="UpdateAutoData();">&nbsp;Update Auto Settings&nbsp;</span></td></tr>
+                <tr><td><span class='smallstock' style="margin-left: 4px;; font-size: 15px  " id="btnGroupPredict" onclick="GroupPredict('');">&nbsp;Train Now</span></td></tr>
+
+            </table>
+
+        </td>
+        <td id="tdTrade" style="vertical-align:top; border: 2px solid black" rowspan="3">
+              <table>
+                  <tr><td>Trade Settings:</td></tr>
+                  <tr><td>Enabled: <input type="text" style="width:80px"  id="txtEnabled"  value=""></td></tr>
+                  <tr><td>Fake Trading: <input type="text" style="width:80px"  id="txtFakeTrading"  value=""></td></tr>
+                  <tr><td>Close Trades: <input type="text" style="width:80px"  id="txtCloseTrades"  value=""></td></tr>
+                  <tr><td>Only Long: <input type="text" style="width:80px"  id="txtOnlyLong"  value=""></td></tr>
+                  <tr><td>Stop Loss: <input type="text" style="width:80px"  id="txtStopLoss"  value=""></td></tr>
+                  <tr><td>Order Size: <input type="text" style="width:80px"  id="txtOrderSize"  value=""></td></tr>
+                   <tr><td>Max # Trades: <input type="text" style="width:80px"  id="txtMaxTrades"  value=""></td></tr>
+              </table>
+        </td>
+        <td id="tdTimes" style="vertical-align:top; border: 2px solid black" rowspan="3">
+              <table>
+                  <tr><td>Auto Settings:</td></tr>
+                  <tr><td>Train Time: <input type="text" style="width:80px"  id="txtTrainTime"  value=""></td></tr>
+                  <tr><td>Trade Time: <input type="text" style="width:80px"  id="txtTradeTime"  value=""></td></tr>
+                  <tr><td>Close Time: <input type="text" style="width:80px"  id="txtCloseTime"  value=""></td></tr>
+                  <tr><td>(24 hour clock i.e.13:45)</td></tr>
+                  <tr><td>(Disable with 25:00)</td></tr>
+
+              </table>
+        </td>
+
+        <td id="tdAccount" style="vertical-align:top; border: 2px solid black" rowspan="3">
+        </td>
+        <td id="tdStatus" style="vertical-align:top; border: 2px solid black" rowspan="3">
+        </td>
+
+    </tr>
+
+     <tr>
+
+    </tr>
+
+
+
+</table>
+<div id="txtResults">&nbsp;</div>
+<div id="tableResults">No Results</div>
+
+<script src="highcharts/highstock.js"></script>
+<script src="highcharts/exporting.js"></script>
+<script src="highcharts/themes/grid-light.js"></script>
+<script type="text/javascript" src="chart.min.js"></script>
+<script type="text/javascript" src="AIDeep.js"></script>
+</body>
+</html>
