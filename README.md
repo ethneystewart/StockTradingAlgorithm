@@ -13,12 +13,15 @@ However, in the end it was found that this algorithm did not work as the percent
   
 ## Webpage Additions (HTML): 
  
-  AIDEEP: created a collapse button,  created total row, changed colours of text 
-  ![Here is a photo](https://github.com/ethneystewart/EthneyCode/blob/main/StockTradingAlgorithm/AIDEEP_Collapse.png?raw=true)
+  ### AIDEEP
+Created a collapse button, created total row, changed colours of text  
+![AIDEEP Collapse](./StockTradingAlgorithm/AIDEEP_Collapse.png)
 
-  AICORR: created drop down menu, changed colours of text
-  ![Here is a photo](https://github.com/ethneystewart/EthneyCode/blob/main/StockTradingAlgorithm/AICORR_1day.png?raw=true)
-  ![Here is a photo](https://github.com/ethneystewart/EthneyCode/blob/main/StockTradingAlgorithm/AICORR_2day.png?raw=true)
+### AICORR
+Created drop down menu, changed colours of text  
+![AICORR 1-Day](./StockTradingAlgorithm/AICORR_1day.png)  
+![AICORR 2-Day](./StockTradingAlgorithm/AICORR_2day.png)
+
 
 
 
