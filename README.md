@@ -60,7 +60,7 @@ I created and customized HTML pages to visualize the algorithm's results and pre
 - Enhanced styling with **color-coded highlights** for quick interpretation.
 
 ![AICORR 1-Day](./AICORR_1day.png)  
-![AICORR 2-Day](./StockTradingAlgorithm/AICORR_2day.png)
+![AICORR 2-Day](./AICORR_2day.png)
 
 ---
 
