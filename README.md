@@ -49,7 +49,8 @@ I created and customized HTML pages to visualize the algorithm's results and pre
 - Added a **summary "Total" row** to present cumulative statistics.
 - Applied **text color enhancements** for clearer data segmentation.
 
-![](./StockTradingAlgorithm/AIDEEP_Collapse.png)
+![](./AIDEEP_Collapse.png)
+
 
 ---
 
@@ -58,7 +59,7 @@ I created and customized HTML pages to visualize the algorithm's results and pre
 - Built an interactive **drop-down menu** for selecting time frames or correlation types.
 - Enhanced styling with **color-coded highlights** for quick interpretation.
 
-![AICORR 1-Day](./StockTradingAlgorithm/AICORR_1day.png)  
+![AICORR 1-Day](./AICORR_1day.png)  
 ![AICORR 2-Day](./StockTradingAlgorithm/AICORR_2day.png)
 
 ---
