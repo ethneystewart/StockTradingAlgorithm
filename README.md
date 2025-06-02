@@ -54,7 +54,7 @@ I created and customized HTML pages to visualize the algorithm's results and pre
 
 ---
 
-### 🔹 AICORR Dashboard
+### AICORR Dashboard
 
 - Built an interactive **drop-down menu** for selecting time frames or correlation types.
 - Enhanced styling with **color-coded highlights** for quick interpretation.
@@ -64,7 +64,7 @@ I created and customized HTML pages to visualize the algorithm's results and pre
 
 ---
 
-## 📚 Skills & Tools Used
+## Skills & Tools Used
 
 - **Python** (Pandas, NumPy, Matplotlib)
 - **Correlation Analysis & Simulated Trading**
@@ -75,7 +75,7 @@ I created and customized HTML pages to visualize the algorithm's results and pre
 
 ---
 
-## 📉 Final Thoughts
+## Final Thoughts
 
 While the project did not result in a profitable trading strategy, it offered me a real-world perspective on:
 
