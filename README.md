@@ -1,4 +1,4 @@
-# 📈 Stock Trading Algorithm  
+# Stock Trading Algorithm  
 *A Personal Data Analysis and Web Visualization Project*
 
 ---
@@ -9,7 +9,7 @@ Through this process, I gained hands-on experience in **data analysis**, **algor
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 The core idea was to identify **statistical correlations between stock pairs** and simulate trades based on those relationships. The strategy aimed to exploit temporary misalignments between correlated stocks, under the assumption that such deviations would revert to the mean.
 
@@ -17,9 +17,9 @@ Although the algorithm’s logic was sound in theory, **backtesting revealed it 
 
 ---
 
-## 📂 Key Components
+## Key Components
 
-### 📊 Algorithm Scripts
+### Algorithm Scripts
 
 These Python scripts form the analytical and simulation core of the project:
 
@@ -39,17 +39,17 @@ These modules use **NumPy**, **Pandas**, and other Python data libraries to proc
 
 ---
 
-## 🌐 Web Visualizations (HTML Additions)
+## Web Visualizations (HTML Additions)
 
 I created and customized HTML pages to visualize the algorithm's results and present them more clearly. These dashboards helped communicate performance to non-technical audiences.
 
-### 🔹 AIDEEP Dashboard
+### AIDEEP Dashboard
 
 - Implemented a **collapsible UI section** to improve user experience.
 - Added a **summary "Total" row** to present cumulative statistics.
 - Applied **text color enhancements** for clearer data segmentation.
 
-![AIDEEP Collapse](./StockTradingAlgorithm/AIDEEP_Collapse.png)
+![](./StockTradingAlgorithm/AIDEEP_Collapse.png)
 
 ---
 
